@@ -55,5 +55,8 @@ def setup
   until user.win? == true
     cardoor = rand(3) + 1
     cardoor == 1 ? (door1.car) : (cardoor == 2 ? (door2.car) : (door3.car if cardoor == 3 ) )
+    p "1: Door1 #{door1.status}"
+    p "2: Door2 #{door2.status}"
+    p "3: Door3 #{door3.status}"
   end
 end
