@@ -67,6 +67,9 @@ def setup
       p "2: Door2 #{door2.status}"
       p "3: Door3 #{door3.status}"
       input = gets.to_i
+      raise ArgumentError, 'You can not chose the door that is already open.' if input == 1
+      raise ArgumentError, 'one to three not above.' if input > 3
+      raise ArgumentError, 'one to three not below.' if input < 1
     end
   end
 end
