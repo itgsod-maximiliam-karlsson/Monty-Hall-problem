@@ -96,3 +96,4 @@ def setup
   end
   p 'You won the car congrats.'
 end
+setup
