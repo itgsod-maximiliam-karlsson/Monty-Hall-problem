@@ -70,6 +70,7 @@ def setup
       raise ArgumentError, 'You can not chose the door that is already open.' if input == 1
       raise ArgumentError, 'one to three not above.' if input > 3
       raise ArgumentError, 'one to three not below.' if input < 1
+      input == 2 ? (door2.car? ? (user.win): (user.lose)) : (input == 3 ? (user.win) : (user.lose))
     end
   end
 end
