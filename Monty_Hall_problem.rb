@@ -53,6 +53,6 @@ end
 def setup
   user, door1, door2, door3  = Player.new, Door.new, Door.new, Door.new
   until user.win? == true
-    
+    cardoor = rand(3) + 1
   end
 end
