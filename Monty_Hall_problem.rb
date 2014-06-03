@@ -4,4 +4,8 @@ class Player
     @winning = false
     @lose = false
   end
+
+  def win
+    @winning = true
+  end
 end
