@@ -63,7 +63,9 @@ def setup
     raise ArgumentError, 'one to three not below.' if input < 1
     input == 1 ? (door2.car? ? (door3.open) : (door2.open)) : (input == 2 ? (door1.car? ? (door3.open) : (door1.open)) : (input == 1 ? (door3.car? ? (door2.open) : (door3.open)) : ()))
     if door1.status == :opened
-      
+      p "1: Door1 #{door1.status} and empty"
+      p "2: Door2 #{door2.status}"
+      p "3: Door3 #{door3.status}"
     end
   end
 end
