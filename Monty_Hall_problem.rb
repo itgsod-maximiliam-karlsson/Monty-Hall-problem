@@ -44,8 +44,12 @@ class Door
   def car?
     @car == true
   end
-  
+
   def empty?
     @car == false
   end
+end
+
+def setup
+  
 end
