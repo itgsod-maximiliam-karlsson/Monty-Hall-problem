@@ -40,4 +40,8 @@ class Door
   def car
     @car = true
   end
+
+  def car?
+    @car == true
+  end
 end
