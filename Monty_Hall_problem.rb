@@ -24,5 +24,8 @@ end
 
 class Door
   attr_reader :status, :car
-
+  def initialize
+    @status = :closed
+    @car = false
+  end
 end
