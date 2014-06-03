@@ -23,5 +23,6 @@ class Player
 end
 
 class Door
-  
+  attr_reader :status, :car
+
 end
