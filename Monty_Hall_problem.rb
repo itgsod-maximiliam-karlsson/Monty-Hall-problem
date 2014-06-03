@@ -28,8 +28,12 @@ class Door
     @status = :closed
     @car = false
   end
-  
+
   def close
     @status = :closed
+  end
+
+  def open
+    @status = :opened
   end
 end
