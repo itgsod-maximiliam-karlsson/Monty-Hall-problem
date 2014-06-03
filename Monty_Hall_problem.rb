@@ -92,5 +92,6 @@ def setup
       raise ArgumentError, 'one to three not below.' if input < 1
       input == 2 ? (door2.car? ? (user.win): (user.lose)) : (input == 1 ? (user.win) : (user.lose))
     end
+    p "You lose the care was behind the #{cardoor} door" if user.lose? == true
   end
 end
