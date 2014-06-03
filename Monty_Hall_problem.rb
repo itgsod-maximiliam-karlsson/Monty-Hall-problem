@@ -94,4 +94,5 @@ def setup
     end
     p "You lose the care was behind the #{cardoor} door" if user.lose? == true
   end
+  p 'You won the car congrats.'
 end
