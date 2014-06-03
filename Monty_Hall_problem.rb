@@ -58,5 +58,6 @@ def setup
     p "1: Door1 #{door1.status}"
     p "2: Door2 #{door2.status}"
     p "3: Door3 #{door3.status}"
+    input = gets.to_i
   end
 end
