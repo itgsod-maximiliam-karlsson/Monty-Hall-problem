@@ -8,4 +8,8 @@ class Player
   def win
     @winning = true
   end
+
+  def lose
+    @lose = true
+  end
 end
