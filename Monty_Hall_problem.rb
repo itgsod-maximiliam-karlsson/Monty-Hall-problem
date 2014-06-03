@@ -12,4 +12,8 @@ class Player
   def lose
     @lose = true
   end
+
+  def lose?
+    @lose == true
+  end
 end
