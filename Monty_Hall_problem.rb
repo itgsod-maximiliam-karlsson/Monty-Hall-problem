@@ -13,6 +13,10 @@ class Player
     @lose = true
   end
 
+  def win?
+    @winning == true
+  end
+  
   def lose?
     @lose == true
   end
