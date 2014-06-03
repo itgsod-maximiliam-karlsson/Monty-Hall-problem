@@ -72,5 +72,15 @@ def setup
       raise ArgumentError, 'one to three not below.' if input < 1
       input == 2 ? (door2.car? ? (user.win): (user.lose)) : (input == 3 ? (user.win) : (user.lose))
     end
+    if door2.status == :opened
+      p "1: Door1 #{door1.status}"
+      p "2: Door2 #{door2.status} and empty"
+      p "3: Door3 #{door3.status}"
+      input = gets.to_i
+      raise ArgumentError, 'You can not chose the door that is already open.' if input == 2
+      raise ArgumentError, 'one to three not above.' if input > 3
+      raise ArgumentError, 'one to three not below.' if input < 1
+      input == 1 ? (door1.car? ? (user.win): (user.lose)) : (input == 3 ? (user.win) : (user.lose))
+    end
   end
 end
