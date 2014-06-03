@@ -52,4 +52,7 @@ end
 
 def setup
   user, door1, door2, door3  = Player.new, Door.new, Door.new, Door.new
+  until user.win? == true
+    
+  end
 end
